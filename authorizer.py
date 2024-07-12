@@ -2,7 +2,7 @@ from requests.auth import HTTPBasicAuth
 
 
 class Authorizer:
-    def __init__(self, user, password, auth_type):
+    def __init__(self, user, password, auth_type='basic'):
         self.user = user
         self.password = password
         self._auth_type = auth_type
